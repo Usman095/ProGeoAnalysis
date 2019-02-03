@@ -1,0 +1,80 @@
+## This could be a directory or a file 
+sequenceDirectoryOrFile /home/usman/SimSpec/bin/Genome/13-6.fasta
+#sequenceDirectoryOrFile /home/usman/SimSpec/bin/Proteins/Chr13Proteins.fasta
+isSequenceFileNucleotide true
+useOnlyForwardsFrames false
+
+## This could be a directory or a file
+#spectraDirectoryOrFile /home/usman/SimSpec/bin/Proteins/humanSpectra1M.mgf
+#spectraDirectoryOrFile /home/usman/SimSpec/bin/Proteins/Chr13Spectra100k.mgf
+#spectraDirectoryOrFile /home/usman/SimSpec/bin/Proteins/Chr13Spectra4.mgf
+#spectraDirectoryOrFile /home/usman/SimSpec/bin/Proteins/Chr13Spectra4.mgf
+spectraDirectoryOrFile /home/usman/SimSpec/bin/Proteins/Chr13Spectra10k15SNR.mgf
+
+## Digestion rules
+cleavageAcid R
+cleavageAcid K
+cleavageAtCarboxylSide true
+
+## iTRAQ
+isITRAQ false
+ITRAQ_REAGENT 144.1021
+
+## Spectrum cleaning
+minimumNumberOfPeaksForAValidSpectrum 15
+
+## error thresholds in PPM
+precursorTolerance 2000.0
+fragmentTolerance 500.0
+
+## no fragments that weigh less than this will be admitted into the fragment list 
+##units are daltons. 
+peptideMassMinimum 100.0
+peptideMassMaximum 10000.0
+
+numberOfMissedCleavages 2
+
+## where we store our reports
+reportDirectory reports
+
+## False Discovery Rates
+numberOfSpectraToUseForFDR -1
+maximumFDR 0.01
+
+## blind mondifications
+searchModifications false
+modificationLowerBound -300.0
+modificationUpperBound 300.0
+
+## Targeted Search
+targetedSearch false
+targetedSearchRadius 500
+
+## static mods
+modA 0.0
+modR 0.0
+modN 0.0
+modD 0.0
+modC 57.021464
+modE 0.0
+modQ 0.0
+modG 0.0
+modH 0.0
+modI 0.0
+modL 0.0
+modK 0.0
+modM 0.0
+modF 0.0
+modP 0.0
+modS 0.0
+modT 0.0
+modW 0.0
+modY 0.0
+modV 0.0
+modU 0.0
+modNTerminal 0.0
+modCTerminal 0.0
+
+smartTolerances false
+
+useSelenocysteine false
